@@ -1,0 +1,110 @@
+:root {
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #0f172a;
+  background-color: #f8fafc;
+}
+
+body {
+  margin: 0;
+  background-color: #f8fafc;
+}
+
+#root {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+header h1 {
+  margin-bottom: 0.25rem;
+}
+
+header p {
+  margin-top: 0;
+  color: #475569;
+}
+
+.panel {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.panel h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+input {
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5f5;
+  font-size: 1rem;
+}
+
+input:disabled {
+  background: #f1f5f9;
+  cursor: not-allowed;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.65rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #2563eb;
+  color: #fff;
+  transition: opacity 0.2s ease;
+}
+
+button.secondary {
+  background: #0f172a;
+}
+
+button.danger {
+  background: #dc2626;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.status-line {
+  margin-bottom: 0.5rem;
+  color: #334155;
+}
+
+.error {
+  padding: 1rem;
+  border-radius: 12px;
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+footer {
+  color: #64748b;
+}
